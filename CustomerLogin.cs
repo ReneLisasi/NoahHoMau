@@ -33,8 +33,8 @@ namespace NoahHoMau
             {
                 //collect student id and send to new form
 
-                CustomerHome nav_Home = new CustomerHome();
-                nav_Home.Show();
+                AdminHome nav_aHome = new AdminHome();
+                nav_aHome.Show();
                 this.Hide();
             }
             //login credentials test

@@ -12,17 +12,16 @@ namespace NoahHoMau
 {
     public partial class CustomerProfile : Form
     {
-        
-        //TODO rene, we need to fix all the compile errors here.
-        
         //properties
         private Customer c1 = new Customer();
         public CustomerProfile()
         {
-            c1.setCustId(CustomerLogin.selectedId);
             InitializeComponent();
+            //c1.setCustId();
+            c1.SelectDB(CustomerLogin.selectedId);
             InitializeTextBoxes();
             InitializeLabels();
+
         }
 
         //This method will initialize all text boxes.
@@ -35,18 +34,17 @@ namespace NoahHoMau
             tbx_Street.Text = c1.getAddress().getStreet();
             tbx_State.Text = c1.getAddress().getState();
             tbx_City.Text = c1.getAddress().getCity();
-            tbx_Zip.Text = c1.getAddress().getZip();
+            tbx_Zip.Text = c1.getAddress().getZip().ToString();
         }
 
         //This method will initialize all labels
         private void InitializeLabels()
         {
             lbl_ID.Text = c1.getCustId();
-            lbl_First_Name.Text = c1.getFirstName();
-            lbl_Last_Name.Text = c1.getLastName();
+            lbl_FirstName.Text = c1.getFirstName();
+            lbl_LastName.Text = c1.getLastName();
         }
-
-        //This method will event handle the submit button being pressed.
+        //BUttons///////////////////////////////////////////////////////////
         private void btn_Submit_Click(object sender, EventArgs e)
         {
             c1.setCustId(tbx_Phone.Text);
@@ -54,16 +52,14 @@ namespace NoahHoMau
             c1.UpdateDB();
         }
 
-        //This method will event handle the delete account button being pressed.
         private void btn_Delete_Click(object sender, EventArgs e)
         {
             if (btn_Delete_Check()) // If the user presses yes on the confirm.
             {
                 c1.DeleteDB();
-                GoToLoginScreen(); 
+                GoToLoginScreen();
             }
         }
-
         //This method will event handle the login button being pressed.
         private void GoToLoginScreen()
         {
@@ -71,18 +67,14 @@ namespace NoahHoMau
             nav_Login.Show();
             this.Hide();
         }
-
-        //This method will event handle the help button
         private void btn_Help_Click(object sender, EventArgs e)
         {
-            //todo maybe change this later.
             MessageBox.Show("Please contact admin at 123-456-7890 for help");
         }
-
         //This method will make give the user a prompt on whether the user wants to delete their account or not.
         private bool btn_Delete_Check()
         {
-            if (MessageBox.Show("Are you sure you want to delete your account?", "Confirmation Window", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            if (MessageBox.Show("Are you sure you want to delete your account?", "Confirmation Window", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 return true;
             }
@@ -91,21 +83,12 @@ namespace NoahHoMau
                 return false;
             }
         }
-        
-        //This method will event handle the payment portal button being pressed.
-        private void btn_Payment_Portal(object sender, EventArgs e)
+
+        private void btn_Payment_Click(object sender, EventArgs e)
         {
-            //todo maybe change this later.
-            MessageBox.Show("Please contact admin at 123-456-7890 for help");
-        }
-        
-        //This method will take the users to the payment portal
-        private void GoToPaymentPortal()
-        {
-            PaymentPortal nav_Payment_Portal = new PaymentPortal();
-            nav_Payment_Portal.Show();
+            PaymentPortal nav_Payment = new PaymentPortal();
+            nav_Payment.Show();
             this.Hide();
         }
-
     }
 }

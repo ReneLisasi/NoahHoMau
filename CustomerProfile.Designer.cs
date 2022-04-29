@@ -38,22 +38,22 @@ namespace NoahHoMau
             this.tbx_Payment = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.lbl_FirstName = new System.Windows.Forms.Label();
+            this.lbl_ID = new System.Windows.Forms.Label();
+            this.tbx_Street = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl_LastName = new System.Windows.Forms.Label();
             this.tbx_Email = new System.Windows.Forms.TextBox();
             this.tbx_Phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbx_State = new System.Windows.Forms.TextBox();
+            this.tbx_City = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbx_Zip = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_Payment = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -120,7 +120,6 @@ namespace NoahHoMau
             this.btn_Clear.TabIndex = 13;
             this.btn_Clear.Text = "CLEAR";
             this.btn_Clear.UseVisualStyleBackColor = false;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // tbx_Password
             // 
@@ -155,30 +154,30 @@ namespace NoahHoMau
             this.label1.TabIndex = 9;
             this.label1.Text = "PAYMENT TYPE";
             // 
-            // label3
+            // lbl_FirstName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(268, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 15);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "FIRST NAME";
+            this.lbl_FirstName.AutoSize = true;
+            this.lbl_FirstName.Location = new System.Drawing.Point(268, 89);
+            this.lbl_FirstName.Name = "lbl_FirstName";
+            this.lbl_FirstName.Size = new System.Drawing.Size(72, 15);
+            this.lbl_FirstName.TabIndex = 18;
+            this.lbl_FirstName.Text = "FIRST NAME";
             // 
-            // label4
+            // lbl_ID
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 89);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 15);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "ID";
+            this.lbl_ID.AutoSize = true;
+            this.lbl_ID.Location = new System.Drawing.Point(12, 89);
+            this.lbl_ID.Name = "lbl_ID";
+            this.lbl_ID.Size = new System.Drawing.Size(18, 15);
+            this.lbl_ID.TabIndex = 17;
+            this.lbl_ID.Text = "ID";
             // 
-            // textBox5
+            // tbx_Street
             // 
-            this.textBox5.Location = new System.Drawing.Point(196, 242);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 23);
-            this.textBox5.TabIndex = 24;
+            this.tbx_Street.Location = new System.Drawing.Point(196, 242);
+            this.tbx_Street.Name = "tbx_Street";
+            this.tbx_Street.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Street.TabIndex = 24;
             // 
             // label5
             // 
@@ -189,14 +188,14 @@ namespace NoahHoMau
             this.label5.TabIndex = 22;
             this.label5.Text = "STREET";
             // 
-            // label6
+            // lbl_LastName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(400, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 15);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "LAST NAME";
+            this.lbl_LastName.AutoSize = true;
+            this.lbl_LastName.Location = new System.Drawing.Point(400, 89);
+            this.lbl_LastName.Name = "lbl_LastName";
+            this.lbl_LastName.Size = new System.Drawing.Size(70, 15);
+            this.lbl_LastName.TabIndex = 21;
+            this.lbl_LastName.Text = "LAST NAME";
             // 
             // tbx_Email
             // 
@@ -231,20 +230,20 @@ namespace NoahHoMau
             this.label8.TabIndex = 25;
             this.label8.Text = "PHONE NUMBER";
             // 
-            // textBox9
+            // tbx_State
             // 
-            this.textBox9.Location = new System.Drawing.Point(472, 241);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 23);
-            this.textBox9.TabIndex = 32;
+            this.tbx_State.Location = new System.Drawing.Point(472, 241);
+            this.tbx_State.Name = "tbx_State";
+            this.tbx_State.Size = new System.Drawing.Size(144, 23);
+            this.tbx_State.TabIndex = 32;
             // 
-            // textBox10
+            // tbx_City
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(196, 288);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(144, 23);
-            this.textBox10.TabIndex = 31;
+            this.tbx_City.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_City.Location = new System.Drawing.Point(196, 288);
+            this.tbx_City.Name = "tbx_City";
+            this.tbx_City.Size = new System.Drawing.Size(144, 23);
+            this.tbx_City.TabIndex = 31;
             // 
             // label9
             // 
@@ -264,13 +263,13 @@ namespace NoahHoMau
             this.label10.TabIndex = 29;
             this.label10.Text = "CITY";
             // 
-            // textBox12
+            // tbx_Zip
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(472, 282);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(144, 23);
-            this.textBox12.TabIndex = 35;
+            this.tbx_Zip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Zip.Location = new System.Drawing.Point(472, 282);
+            this.tbx_Zip.Name = "tbx_Zip";
+            this.tbx_Zip.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Zip.TabIndex = 35;
             // 
             // label12
             // 
@@ -281,18 +280,19 @@ namespace NoahHoMau
             this.label12.TabIndex = 33;
             this.label12.Text = "ZIP";
             // 
-            // button4
+            // btn_Payment
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(-1, 369);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(803, 46);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "PAYMENT PORTAL";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_Payment.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_Payment.FlatAppearance.BorderSize = 0;
+            this.btn_Payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Payment.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Payment.Location = new System.Drawing.Point(-1, 369);
+            this.btn_Payment.Name = "btn_Payment";
+            this.btn_Payment.Size = new System.Drawing.Size(803, 46);
+            this.btn_Payment.TabIndex = 36;
+            this.btn_Payment.Text = "PAYMENT PORTAL";
+            this.btn_Payment.UseVisualStyleBackColor = false;
+            this.btn_Payment.Click += new System.EventHandler(this.btn_Payment_Click);
             // 
             // btn_Delete
             // 
@@ -399,21 +399,21 @@ namespace NoahHoMau
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.btn_Delete);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.tbx_Zip);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.tbx_State);
+            this.Controls.Add(this.tbx_City);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tbx_Email);
             this.Controls.Add(this.tbx_Phone);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbx_Street);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_LastName);
+            this.Controls.Add(this.lbl_FirstName);
+            this.Controls.Add(this.lbl_ID);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.btn_Submit);
@@ -422,7 +422,7 @@ namespace NoahHoMau
             this.Controls.Add(this.tbx_Payment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_Payment);
             this.Controls.Add(this.pictureBox2);
             this.Name = "CustomerProfile";
             this.Text = "CustomerProfile";
@@ -446,22 +446,22 @@ namespace NoahHoMau
         private System.Windows.Forms.TextBox tbx_Payment;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label lbl_FirstName;
+        private System.Windows.Forms.Label lbl_ID;
+        private System.Windows.Forms.TextBox tbx_Street;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_LastName;
         private System.Windows.Forms.TextBox tbx_Email;
         private System.Windows.Forms.TextBox tbx_Phone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbx_State;
+        private System.Windows.Forms.TextBox tbx_City;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbx_Zip;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_Payment;
         private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button6;

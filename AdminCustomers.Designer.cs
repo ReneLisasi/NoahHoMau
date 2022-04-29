@@ -30,43 +30,43 @@ namespace NoahHoMau
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCustomers));
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbx_Zip = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbx_State = new System.Windows.Forms.TextBox();
+            this.tbx_City = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbx_Email = new System.Windows.Forms.TextBox();
+            this.tbx_Phone2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbx_Street = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbx_Payment = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tbx_FirstName = new System.Windows.Forms.TextBox();
+            this.tbx_LastName = new System.Windows.Forms.TextBox();
+            this.tbx_Phone = new System.Windows.Forms.TextBox();
+            this.btn_Lookup = new System.Windows.Forms.Button();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox12
+            // tbx_Zip
             // 
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Location = new System.Drawing.Point(483, 339);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(144, 23);
-            this.textBox12.TabIndex = 54;
+            this.tbx_Zip.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Zip.Location = new System.Drawing.Point(483, 339);
+            this.tbx_Zip.Name = "tbx_Zip";
+            this.tbx_Zip.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Zip.TabIndex = 54;
             // 
             // label12
             // 
@@ -77,20 +77,20 @@ namespace NoahHoMau
             this.label12.TabIndex = 53;
             this.label12.Text = "ZIP";
             // 
-            // textBox9
+            // tbx_State
             // 
-            this.textBox9.Location = new System.Drawing.Point(483, 298);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 23);
-            this.textBox9.TabIndex = 52;
+            this.tbx_State.Location = new System.Drawing.Point(483, 298);
+            this.tbx_State.Name = "tbx_State";
+            this.tbx_State.Size = new System.Drawing.Size(144, 23);
+            this.tbx_State.TabIndex = 52;
             // 
-            // textBox10
+            // tbx_City
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Location = new System.Drawing.Point(207, 345);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(144, 23);
-            this.textBox10.TabIndex = 51;
+            this.tbx_City.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_City.Location = new System.Drawing.Point(207, 345);
+            this.tbx_City.Name = "tbx_City";
+            this.tbx_City.Size = new System.Drawing.Size(144, 23);
+            this.tbx_City.TabIndex = 51;
             // 
             // label9
             // 
@@ -110,20 +110,20 @@ namespace NoahHoMau
             this.label10.TabIndex = 49;
             this.label10.Text = "CITY";
             // 
-            // textBox7
+            // tbx_Email
             // 
-            this.textBox7.Location = new System.Drawing.Point(207, 241);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(144, 23);
-            this.textBox7.TabIndex = 48;
+            this.tbx_Email.Location = new System.Drawing.Point(207, 241);
+            this.tbx_Email.Name = "tbx_Email";
+            this.tbx_Email.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Email.TabIndex = 48;
             // 
-            // textBox8
+            // tbx_Phone2
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(207, 184);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(144, 23);
-            this.textBox8.TabIndex = 47;
+            this.tbx_Phone2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Phone2.Location = new System.Drawing.Point(207, 184);
+            this.tbx_Phone2.Name = "tbx_Phone2";
+            this.tbx_Phone2.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Phone2.TabIndex = 47;
             // 
             // label7
             // 
@@ -143,12 +143,12 @@ namespace NoahHoMau
             this.label8.TabIndex = 45;
             this.label8.Text = "PHONE NUMBER";
             // 
-            // textBox5
+            // tbx_Street
             // 
-            this.textBox5.Location = new System.Drawing.Point(207, 299);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 23);
-            this.textBox5.TabIndex = 44;
+            this.tbx_Street.Location = new System.Drawing.Point(207, 299);
+            this.tbx_Street.Name = "tbx_Street";
+            this.tbx_Street.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Street.TabIndex = 44;
             // 
             // label5
             // 
@@ -186,13 +186,13 @@ namespace NoahHoMau
             this.label4.TabIndex = 40;
             this.label4.Text = "ID";
             // 
-            // textBox1
+            // tbx_Payment
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(483, 184);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 23);
-            this.textBox1.TabIndex = 38;
+            this.tbx_Payment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Payment.Location = new System.Drawing.Point(483, 184);
+            this.tbx_Payment.Name = "tbx_Payment";
+            this.tbx_Payment.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Payment.TabIndex = 38;
             // 
             // label2
             // 
@@ -212,68 +212,71 @@ namespace NoahHoMau
             this.label1.TabIndex = 36;
             this.label1.Text = "PAYMENT TYPE";
             // 
-            // textBox2
+            // tbx_FirstName
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(207, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 23);
-            this.textBox2.TabIndex = 47;
+            this.tbx_FirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_FirstName.Location = new System.Drawing.Point(207, 136);
+            this.tbx_FirstName.Name = "tbx_FirstName";
+            this.tbx_FirstName.Size = new System.Drawing.Size(144, 23);
+            this.tbx_FirstName.TabIndex = 47;
             // 
-            // textBox3
+            // tbx_LastName
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(483, 136);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 23);
-            this.textBox3.TabIndex = 47;
+            this.tbx_LastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_LastName.Location = new System.Drawing.Point(483, 136);
+            this.tbx_LastName.Name = "tbx_LastName";
+            this.tbx_LastName.Size = new System.Drawing.Size(144, 23);
+            this.tbx_LastName.TabIndex = 47;
             // 
-            // textBox4
+            // tbx_Phone
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(207, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(144, 23);
-            this.textBox4.TabIndex = 47;
+            this.tbx_Phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Phone.Location = new System.Drawing.Point(207, 90);
+            this.tbx_Phone.Name = "tbx_Phone";
+            this.tbx_Phone.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Phone.TabIndex = 47;
             // 
-            // button1
+            // btn_Lookup
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(483, 90);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(144, 23);
-            this.button1.TabIndex = 123;
-            this.button1.Text = "LOOKUP";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Lookup.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_Lookup.FlatAppearance.BorderSize = 0;
+            this.btn_Lookup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Lookup.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Lookup.Location = new System.Drawing.Point(483, 90);
+            this.btn_Lookup.Name = "btn_Lookup";
+            this.btn_Lookup.Size = new System.Drawing.Size(144, 23);
+            this.btn_Lookup.TabIndex = 123;
+            this.btn_Lookup.Text = "LOOKUP";
+            this.btn_Lookup.UseVisualStyleBackColor = false;
+            this.btn_Lookup.Click += new System.EventHandler(this.btn_Lookup_Click);
             // 
-            // button2
+            // btn_Update
             // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(-6, 406);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(392, 46);
-            this.button2.TabIndex = 124;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_Update.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Update.FlatAppearance.BorderSize = 0;
+            this.btn_Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Update.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Update.Location = new System.Drawing.Point(-6, 406);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(392, 46);
+            this.btn_Update.TabIndex = 124;
+            this.btn_Update.Text = "UPDATE";
+            this.btn_Update.UseVisualStyleBackColor = false;
+            this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // button3
+            // btn_Delete
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(381, 406);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(427, 46);
-            this.button3.TabIndex = 125;
-            this.button3.Text = "DELETE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_Delete.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Delete.Location = new System.Drawing.Point(381, 406);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(427, 46);
+            this.btn_Delete.TabIndex = 125;
+            this.btn_Delete.Text = "DELETE";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // label11
             // 
@@ -287,18 +290,19 @@ namespace NoahHoMau
             this.label11.Text = "CUSTOMER MANAGER";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button6
+            // btn_Back
             // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(-6, 15);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 38);
-            this.button6.TabIndex = 127;
-            this.button6.Text = "BACK";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_Back.BackColor = System.Drawing.Color.Black;
+            this.btn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Back.Location = new System.Drawing.Point(-6, 15);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(68, 38);
+            this.btn_Back.TabIndex = 127;
+            this.btn_Back.Text = "BACK";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // pictureBox2
             // 
@@ -315,30 +319,30 @@ namespace NoahHoMau
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.btn_Update);
+            this.Controls.Add(this.btn_Lookup);
+            this.Controls.Add(this.tbx_Zip);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.tbx_State);
+            this.Controls.Add(this.tbx_City);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.tbx_Email);
+            this.Controls.Add(this.tbx_LastName);
+            this.Controls.Add(this.tbx_Phone);
+            this.Controls.Add(this.tbx_FirstName);
+            this.Controls.Add(this.tbx_Phone2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbx_Street);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbx_Payment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AdminCustomers";
@@ -351,32 +355,32 @@ namespace NoahHoMau
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbx_Zip;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbx_State;
+        private System.Windows.Forms.TextBox tbx_City;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbx_Email;
+        private System.Windows.Forms.TextBox tbx_Phone2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbx_Street;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbx_Payment;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox tbx_FirstName;
+        private System.Windows.Forms.TextBox tbx_LastName;
+        private System.Windows.Forms.TextBox tbx_Phone;
+        private System.Windows.Forms.Button btn_Lookup;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

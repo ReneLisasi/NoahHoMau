@@ -90,7 +90,7 @@ namespace NoahHoMau
                 custAddress.City = (dr.GetValue(5) + "");
                 custAddress.State = (dr.GetValue(6) + "");
                 custAddress.Zip = (Int32.Parse(dr.GetValue(7) + ""));
-                Email = (dr.GetValue(8) + "");
+                custEmail = (dr.GetValue(8) + "");
             }
             catch (Exception ex)
             {
@@ -116,7 +116,7 @@ namespace NoahHoMau
                                               "'" + custAddress.getCity() + "'," +
                                               "'" + custAddress.getState() + "'," +
                                               "" + custAddress.getZip() + "," +
-                                              "'" + Email + "')";
+                                              "'" + getCustEmail() + "')";
 
             OleDbDataAdapter2.InsertCommand.CommandText = cmd;
             OleDbDataAdapter2.InsertCommand.Connection = OleDbConnection2;

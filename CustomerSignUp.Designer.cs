@@ -46,7 +46,6 @@ namespace NoahHoMau
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Help = new System.Windows.Forms.Button();
             this.btn_CreateAcc = new System.Windows.Forms.Button();
-            this.btn_Clear = new System.Windows.Forms.Button();
             this.tbx_Password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbx_FirstName = new System.Windows.Forms.TextBox();
@@ -196,27 +195,13 @@ namespace NoahHoMau
             this.btn_CreateAcc.FlatAppearance.BorderSize = 0;
             this.btn_CreateAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CreateAcc.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_CreateAcc.Location = new System.Drawing.Point(147, 460);
+            this.btn_CreateAcc.Location = new System.Drawing.Point(-2, 460);
             this.btn_CreateAcc.Name = "btn_CreateAcc";
-            this.btn_CreateAcc.Size = new System.Drawing.Size(493, 52);
+            this.btn_CreateAcc.Size = new System.Drawing.Size(642, 52);
             this.btn_CreateAcc.TabIndex = 43;
             this.btn_CreateAcc.Text = "CREATE ACCOUNT";
             this.btn_CreateAcc.UseVisualStyleBackColor = false;
             this.btn_CreateAcc.Click += new System.EventHandler(this.btn_CreateAcc_Click);
-            // 
-            // btn_Clear
-            // 
-            this.btn_Clear.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btn_Clear.FlatAppearance.BorderSize = 0;
-            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Clear.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_Clear.Location = new System.Drawing.Point(-1, 460);
-            this.btn_Clear.Name = "btn_Clear";
-            this.btn_Clear.Size = new System.Drawing.Size(151, 52);
-            this.btn_Clear.TabIndex = 42;
-            this.btn_Clear.Text = "CLEAR";
-            this.btn_Clear.UseVisualStyleBackColor = false;
-            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // tbx_Password
             // 
@@ -321,7 +306,6 @@ namespace NoahHoMau
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_Help);
             this.Controls.Add(this.btn_CreateAcc);
-            this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.tbx_Password);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -352,7 +336,6 @@ namespace NoahHoMau
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Help;
         private System.Windows.Forms.Button btn_CreateAcc;
-        private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.TextBox tbx_Password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbx_FirstName;

@@ -50,7 +50,7 @@ namespace NoahHoMau
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.cbx_OrderList = new System.Windows.Forms.ComboBox();
+            this.cbx_CartList = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -260,21 +260,21 @@ namespace NoahHoMau
             this.label10.TabIndex = 34;
             this.label10.Text = "ORDER LIST:";
             // 
-            // cbx_OrderList
+            // cbx_CartList
             // 
-            this.cbx_OrderList.FormattingEnabled = true;
-            this.cbx_OrderList.Location = new System.Drawing.Point(114, 117);
-            this.cbx_OrderList.Name = "cbx_OrderList";
-            this.cbx_OrderList.Size = new System.Drawing.Size(613, 23);
-            this.cbx_OrderList.TabIndex = 132;
-            this.cbx_OrderList.SelectedIndexChanged += new System.EventHandler(this.cbx_OrderList_SelectedIndexChanged);
+            this.cbx_CartList.FormattingEnabled = true;
+            this.cbx_CartList.Location = new System.Drawing.Point(114, 117);
+            this.cbx_CartList.Name = "cbx_CartList";
+            this.cbx_CartList.Size = new System.Drawing.Size(613, 23);
+            this.cbx_CartList.TabIndex = 132;
+            this.cbx_CartList.SelectedIndexChanged += new System.EventHandler(this.cbx_OrderList_SelectedIndexChanged);
             // 
             // CustomerCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 570);
-            this.Controls.Add(this.cbx_OrderList);
+            this.Controls.Add(this.cbx_CartList);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btn_Remove_All);
@@ -320,6 +320,6 @@ namespace NoahHoMau
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox cbx_OrderList;
+        private System.Windows.Forms.ComboBox cbx_CartList;
     }
 }

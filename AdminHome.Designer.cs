@@ -33,8 +33,8 @@ namespace NoahHoMau
             this.label16 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_CustomerManager = new System.Windows.Forms.Button();
+            this.btn_OrderManager = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,39 +73,41 @@ namespace NoahHoMau
             this.pictureBox14.TabIndex = 114;
             this.pictureBox14.TabStop = false;
             // 
-            // button2
+            // btn_CustomerManager
             // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(403, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(278, 230);
-            this.button2.TabIndex = 128;
-            this.button2.Text = "CUSTOMER MANAGER";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_CustomerManager.BackColor = System.Drawing.Color.Black;
+            this.btn_CustomerManager.FlatAppearance.BorderSize = 0;
+            this.btn_CustomerManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_CustomerManager.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_CustomerManager.Location = new System.Drawing.Point(403, 112);
+            this.btn_CustomerManager.Name = "btn_CustomerManager";
+            this.btn_CustomerManager.Size = new System.Drawing.Size(278, 230);
+            this.btn_CustomerManager.TabIndex = 128;
+            this.btn_CustomerManager.Text = "CUSTOMER MANAGER";
+            this.btn_CustomerManager.UseVisualStyleBackColor = false;
+            this.btn_CustomerManager.Click += new System.EventHandler(this.btn_CustomerManager_Click);
             // 
-            // button1
+            // btn_OrderManager
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(109, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 230);
-            this.button1.TabIndex = 129;
-            this.button1.Text = "ORDER MANAGER";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_OrderManager.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_OrderManager.FlatAppearance.BorderSize = 0;
+            this.btn_OrderManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_OrderManager.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_OrderManager.Location = new System.Drawing.Point(109, 112);
+            this.btn_OrderManager.Name = "btn_OrderManager";
+            this.btn_OrderManager.Size = new System.Drawing.Size(278, 230);
+            this.btn_OrderManager.TabIndex = 129;
+            this.btn_OrderManager.Text = "ORDER MANAGER";
+            this.btn_OrderManager.UseVisualStyleBackColor = false;
+            this.btn_OrderManager.Click += new System.EventHandler(this.btn_OrderManager_Click);
             // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_CustomerManager);
+            this.Controls.Add(this.btn_OrderManager);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.pictureBox14);
@@ -121,7 +123,7 @@ namespace NoahHoMau
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_CustomerManager;
+        private System.Windows.Forms.Button btn_OrderManager;
     }
 }
