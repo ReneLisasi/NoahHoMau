@@ -31,11 +31,11 @@ namespace NoahHoMau
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerProfile));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Help = new System.Windows.Forms.Button();
+            this.btn_Submit = new System.Windows.Forms.Button();
+            this.btn_Clear = new System.Windows.Forms.Button();
+            this.tbx_Password = new System.Windows.Forms.TextBox();
+            this.tbx_Payment = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,8 +43,8 @@ namespace NoahHoMau
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbx_Email = new System.Windows.Forms.TextBox();
+            this.tbx_Phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -54,7 +54,7 @@ namespace NoahHoMau
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -80,59 +80,62 @@ namespace NoahHoMau
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btn_Help
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(635, 409);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 46);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "HELP";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_Help.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_Help.FlatAppearance.BorderSize = 0;
+            this.btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Help.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Help.Location = new System.Drawing.Point(635, 409);
+            this.btn_Help.Name = "btn_Help";
+            this.btn_Help.Size = new System.Drawing.Size(167, 46);
+            this.btn_Help.TabIndex = 15;
+            this.btn_Help.Text = "HELP";
+            this.btn_Help.UseVisualStyleBackColor = false;
+            this.btn_Help.Click += new System.EventHandler(this.btn_Help_Click);
             // 
-            // button2
+            // btn_Submit
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(330, 409);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(310, 46);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "SUBMIT";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_Submit.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_Submit.FlatAppearance.BorderSize = 0;
+            this.btn_Submit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Submit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Submit.Location = new System.Drawing.Point(330, 409);
+            this.btn_Submit.Name = "btn_Submit";
+            this.btn_Submit.Size = new System.Drawing.Size(310, 46);
+            this.btn_Submit.TabIndex = 14;
+            this.btn_Submit.Text = "SUBMIT";
+            this.btn_Submit.UseVisualStyleBackColor = false;
+            this.btn_Submit.Click += new System.EventHandler(this.btn_Submit_Click);
             // 
-            // button1
+            // btn_Clear
             // 
-            this.button1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(-1, 409);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 46);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "CLEAR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Clear.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_Clear.FlatAppearance.BorderSize = 0;
+            this.btn_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Clear.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Clear.Location = new System.Drawing.Point(-1, 409);
+            this.btn_Clear.Name = "btn_Clear";
+            this.btn_Clear.Size = new System.Drawing.Size(91, 46);
+            this.btn_Clear.TabIndex = 13;
+            this.btn_Clear.Text = "CLEAR";
+            this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
-            // textBox2
+            // tbx_Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(472, 184);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 23);
-            this.textBox2.TabIndex = 12;
+            this.tbx_Password.Location = new System.Drawing.Point(472, 184);
+            this.tbx_Password.Name = "tbx_Password";
+            this.tbx_Password.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Password.TabIndex = 12;
             // 
-            // textBox1
+            // tbx_Payment
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(472, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 23);
-            this.textBox1.TabIndex = 11;
+            this.tbx_Payment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Payment.Location = new System.Drawing.Point(472, 127);
+            this.tbx_Payment.Name = "tbx_Payment";
+            this.tbx_Payment.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Payment.TabIndex = 11;
             // 
             // label2
             // 
@@ -195,20 +198,20 @@ namespace NoahHoMau
             this.label6.TabIndex = 21;
             this.label6.Text = "LAST NAME";
             // 
-            // textBox7
+            // tbx_Email
             // 
-            this.textBox7.Location = new System.Drawing.Point(196, 184);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(144, 23);
-            this.textBox7.TabIndex = 28;
+            this.tbx_Email.Location = new System.Drawing.Point(196, 184);
+            this.tbx_Email.Name = "tbx_Email";
+            this.tbx_Email.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Email.TabIndex = 28;
             // 
-            // textBox8
+            // tbx_Phone
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(196, 127);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(144, 23);
-            this.textBox8.TabIndex = 27;
+            this.tbx_Phone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbx_Phone.Location = new System.Drawing.Point(196, 127);
+            this.tbx_Phone.Name = "tbx_Phone";
+            this.tbx_Phone.Size = new System.Drawing.Size(144, 23);
+            this.tbx_Phone.TabIndex = 27;
             // 
             // label7
             // 
@@ -291,18 +294,19 @@ namespace NoahHoMau
             this.button4.Text = "PAYMENT PORTAL";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btn_Delete
             // 
-            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(90, 409);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 46);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "DELETE ACCOUNT";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_Delete.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Delete.FlatAppearance.BorderSize = 0;
+            this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Delete.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Delete.Location = new System.Drawing.Point(90, 409);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(250, 46);
+            this.btn_Delete.TabIndex = 37;
+            this.btn_Delete.Text = "DELETE ACCOUNT";
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // pictureBox2
             // 
@@ -394,15 +398,15 @@ namespace NoahHoMau
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.tbx_Email);
+            this.Controls.Add(this.tbx_Phone);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox5);
@@ -411,11 +415,11 @@ namespace NoahHoMau
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_Help);
+            this.Controls.Add(this.btn_Submit);
+            this.Controls.Add(this.btn_Clear);
+            this.Controls.Add(this.tbx_Password);
+            this.Controls.Add(this.tbx_Payment);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
@@ -435,11 +439,11 @@ namespace NoahHoMau
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_Help;
+        private System.Windows.Forms.Button btn_Submit;
+        private System.Windows.Forms.Button btn_Clear;
+        private System.Windows.Forms.TextBox tbx_Password;
+        private System.Windows.Forms.TextBox tbx_Payment;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -447,8 +451,8 @@ namespace NoahHoMau
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbx_Email;
+        private System.Windows.Forms.TextBox tbx_Phone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox9;
@@ -458,7 +462,7 @@ namespace NoahHoMau
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label11;

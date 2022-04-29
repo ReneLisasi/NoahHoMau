@@ -81,5 +81,9 @@ namespace NoahHoMau
             this.Hide();
         }
 
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

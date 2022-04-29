@@ -30,13 +30,13 @@ namespace NoahHoMau
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerCart));
-            this.button16 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Remove_All = new System.Windows.Forms.Button();
+            this.btn_Remove = new System.Windows.Forms.Button();
+            this.btn_Checkout = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,51 +50,54 @@ namespace NoahHoMau
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cbx_OrderList = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button16
+            // btn_Remove_All
             // 
-            this.button16.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button16.Location = new System.Drawing.Point(1, 523);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(153, 46);
-            this.button16.TabIndex = 124;
-            this.button16.Text = "REMOVE ALL";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btn_Remove_All.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_Remove_All.FlatAppearance.BorderSize = 0;
+            this.btn_Remove_All.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Remove_All.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Remove_All.Location = new System.Drawing.Point(1, 523);
+            this.btn_Remove_All.Name = "btn_Remove_All";
+            this.btn_Remove_All.Size = new System.Drawing.Size(153, 46);
+            this.btn_Remove_All.TabIndex = 124;
+            this.btn_Remove_All.Text = "REMOVE ALL";
+            this.btn_Remove_All.UseVisualStyleBackColor = false;
+            this.btn_Remove_All.Click += new System.EventHandler(this.btn_Remove_All_Click);
             // 
-            // button5
+            // btn_Remove
             // 
-            this.button5.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(149, 523);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(214, 46);
-            this.button5.TabIndex = 123;
-            this.button5.Text = "REMOVE ITEM";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btn_Remove.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Remove.FlatAppearance.BorderSize = 0;
+            this.btn_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Remove.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Remove.Location = new System.Drawing.Point(149, 523);
+            this.btn_Remove.Name = "btn_Remove";
+            this.btn_Remove.Size = new System.Drawing.Size(214, 46);
+            this.btn_Remove.TabIndex = 123;
+            this.btn_Remove.Text = "REMOVE ITEM";
+            this.btn_Remove.UseVisualStyleBackColor = false;
+            this.btn_Remove.Click += new System.EventHandler(this.btn_Remove_Click);
             // 
-            // button1
+            // btn_Checkout
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(360, 523);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(444, 46);
-            this.button1.TabIndex = 122;
-            this.button1.Text = "CHECKOUT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Checkout.BackColor = System.Drawing.Color.MediumBlue;
+            this.btn_Checkout.FlatAppearance.BorderSize = 0;
+            this.btn_Checkout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Checkout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Checkout.Location = new System.Drawing.Point(360, 523);
+            this.btn_Checkout.Name = "btn_Checkout";
+            this.btn_Checkout.Size = new System.Drawing.Size(444, 46);
+            this.btn_Checkout.TabIndex = 122;
+            this.btn_Checkout.Text = "CHECKOUT";
+            this.btn_Checkout.UseVisualStyleBackColor = false;
+            this.btn_Checkout.Click += new System.EventHandler(this.btn_Checkout_Click);
             // 
             // label16
             // 
@@ -128,18 +131,19 @@ namespace NoahHoMau
             this.pictureBox14.TabIndex = 118;
             this.pictureBox14.TabStop = false;
             // 
-            // button14
+            // btn_Back
             // 
-            this.button14.BackColor = System.Drawing.Color.Black;
-            this.button14.FlatAppearance.BorderSize = 0;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.ForeColor = System.Drawing.SystemColors.Control;
-            this.button14.Location = new System.Drawing.Point(1, 39);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(68, 43);
-            this.button14.TabIndex = 119;
-            this.button14.Text = "BACK";
-            this.button14.UseVisualStyleBackColor = false;
+            this.btn_Back.BackColor = System.Drawing.Color.Black;
+            this.btn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Back.Location = new System.Drawing.Point(1, 39);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(68, 43);
+            this.btn_Back.TabIndex = 119;
+            this.btn_Back.Text = "BACK";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
             // 
             // label3
             // 
@@ -256,35 +260,29 @@ namespace NoahHoMau
             this.label10.TabIndex = 34;
             this.label10.Text = "ORDER LIST:";
             // 
-            // checkedListBox1
+            // cbx_OrderList
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Pepperoni (Pepperoni, Medium, American Cheese)\t\t$10",
-            "Custom (Mushroom, Thin, Mozzarella)\t\t\t$10",
-            "Soda\t\t\t\t\t\t\t$2"});
-            this.checkedListBox1.Location = new System.Drawing.Point(69, 108);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(696, 330);
-            this.checkedListBox1.TabIndex = 135;
+            this.cbx_OrderList.FormattingEnabled = true;
+            this.cbx_OrderList.Location = new System.Drawing.Point(114, 117);
+            this.cbx_OrderList.Name = "cbx_OrderList";
+            this.cbx_OrderList.Size = new System.Drawing.Size(613, 23);
+            this.cbx_OrderList.TabIndex = 132;
+            this.cbx_OrderList.SelectedIndexChanged += new System.EventHandler(this.cbx_OrderList_SelectedIndexChanged);
             // 
             // CustomerCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 570);
+            this.Controls.Add(this.cbx_OrderList);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Remove_All);
+            this.Controls.Add(this.btn_Remove);
+            this.Controls.Add(this.btn_Checkout);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox14);
             this.Name = "CustomerCart";
@@ -302,13 +300,13 @@ namespace NoahHoMau
 
         #endregion
 
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Remove_All;
+        private System.Windows.Forms.Button btn_Remove;
+        private System.Windows.Forms.Button btn_Checkout;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -322,6 +320,6 @@ namespace NoahHoMau
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox cbx_OrderList;
     }
 }

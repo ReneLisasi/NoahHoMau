@@ -16,5 +16,10 @@ namespace NoahHoMau
         {
             InitializeComponent();
         }
+
+        private void btn_Cancel_order_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,5 +16,25 @@ namespace NoahHoMau
         {
             InitializeComponent();
         }
+
+        private void btn_Submit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Help_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -38,10 +38,8 @@ namespace NoahHoMau
             this.button2 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btn_Cancel_order = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.pfoileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -149,18 +147,19 @@ namespace NoahHoMau
             this.pictureBox13.TabIndex = 112;
             this.pictureBox13.TabStop = false;
             // 
-            // button16
+            // btn_Cancel_order
             // 
-            this.button16.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button16.Location = new System.Drawing.Point(541, 149);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(128, 46);
-            this.button16.TabIndex = 117;
-            this.button16.Text = "CANCEL ORDER";
-            this.button16.UseVisualStyleBackColor = false;
+            this.btn_Cancel_order.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_Cancel_order.FlatAppearance.BorderSize = 0;
+            this.btn_Cancel_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cancel_order.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_Cancel_order.Location = new System.Drawing.Point(541, 149);
+            this.btn_Cancel_order.Name = "btn_Cancel_order";
+            this.btn_Cancel_order.Size = new System.Drawing.Size(128, 46);
+            this.btn_Cancel_order.TabIndex = 117;
+            this.btn_Cancel_order.Text = "CANCEL ORDER";
+            this.btn_Cancel_order.UseVisualStyleBackColor = false;
+            this.btn_Cancel_order.Click += new System.EventHandler(this.btn_Cancel_order_Click);
             // 
             // label1
             // 
@@ -171,21 +170,6 @@ namespace NoahHoMau
             this.label1.TabIndex = 118;
             this.label1.Text = "Order No 0001\r\n\"Whiskey\"\r\nJin Kazama\r\n123 Main St, Marietta, GA\r\nTime Left: 45min" +
     "\r\nTotal Items: 3";
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(67, 201);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(602, 23);
-            this.progressBar1.TabIndex = 119;
-            this.progressBar1.Value = 25;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(70, 344);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(599, 23);
-            this.progressBar2.TabIndex = 121;
             // 
             // label2
             // 
@@ -251,11 +235,9 @@ namespace NoahHoMau
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btn_Cancel_order);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button6);
@@ -287,10 +269,8 @@ namespace NoahHoMau
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btn_Cancel_order;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem pfoileToolStripMenuItem;

@@ -34,26 +34,33 @@ namespace NoahHoMau
             switch (pizzaName){
                 case "Pepperoni":
             PizzaName = "Pepperoni";
-            PizzaCheese = "Mozarella";
-            PizzaCrust = "Medium";
-            PizzaSize = "Medium";
-            PizzaToppings = "Pepperoni";
+            PizzaCheese = "";
+            PizzaCrust = "";
+            PizzaSize = "";
+            PizzaToppings = "";
                     break;
 
                 case "Supreme":
                     PizzaName = "Supreme";
-                    PizzaCheese = "American Cheese";
-                    PizzaCrust = "Medium";
-                    PizzaSize = "Medium";
-                    PizzaToppings = "Mushroom";
+                    PizzaCheese = "";
+                    PizzaCrust = "";
+                    PizzaSize = "";
+                    PizzaToppings = "";
                     break;
 
                 case "Cheese":
                     PizzaName = "Cheese";
-                    PizzaCheese = "Three Cheese";
-                    PizzaCrust = "Medium";
-                    PizzaSize = "Medium";
-                    PizzaToppings = "Garlic";
+                    PizzaCheese = "";
+                    PizzaCrust = "";
+                    PizzaSize = "";
+                    PizzaToppings = "";
+                    break;
+                case "Custom":
+                    PizzaName = "Custom";
+                    PizzaCheese = "";
+                    PizzaCrust = "";
+                    PizzaSize = "";
+                    PizzaToppings = "";
                     break;
             }
             
@@ -86,7 +93,7 @@ namespace NoahHoMau
         public int getIndex() { return Index; }
 
         public void setPizzaName(string pizzaName) { PizzaName = pizzaName; }
-        public void setPizzaBase(string pizzaBase) { PizzaCheese = pizzaBase; }
+        public void setPizzaCheese(string pizzaBase) { PizzaCheese = pizzaBase; }
         public void setPizzaCrust(string pizzaCrust) { PizzaCrust = pizzaCrust; }
         public void setPizzaSize(string pizzaSize) { PizzaSize = pizzaSize; }
         public void setPizzaToppings(string pizzaToppings) { PizzaToppings = pizzaToppings; }
