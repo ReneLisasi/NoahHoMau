@@ -18,6 +18,7 @@ namespace NoahHoMau
             InitializeComponent();
         }
 
+
         //This method will handle the order manager button being pressed and will take the user to the order manager.
         private void btn_OrderManager_Click(object sender,EventArgs e)
         {
@@ -32,6 +33,7 @@ namespace NoahHoMau
             AdminCustomers nav_Admin_Customer = new AdminCustomers();
             nav_Admin_Customer.Show();
             this.Hide();
+       
         }
     }
 }
