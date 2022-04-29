@@ -18,6 +18,7 @@ namespace NoahHoMau
         String custPw;
         String custFname, custLname, custEmail;
         Address custAddress = new Address();
+        private String paymentType;
 
         //Constructor that passes no arguments
         public Customer() : base("", "", new Address(), "")
@@ -51,6 +52,15 @@ namespace NoahHoMau
                     + " Last Name " + custLname + " Address: " + custAddress +
                     " Email: " + custEmail);
 
+        }
+
+        public void setPaymentType(string paymentType)
+        {
+            this.paymentType = paymentType;
+        }
+        public string getPaymentType()
+        {
+            return paymentType;
         }
         /***
         * displayCustomer2()
