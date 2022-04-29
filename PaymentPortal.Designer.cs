@@ -44,7 +44,7 @@ namespace NoahHoMau
             this.rd_Visa = new System.Windows.Forms.RadioButton();
             this.rd_Paypal = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -121,6 +121,7 @@ namespace NoahHoMau
             this.btn_Help.TabIndex = 71;
             this.btn_Help.Text = "HELP";
             this.btn_Help.UseVisualStyleBackColor = false;
+            this.btn_Help.Click += new System.EventHandler(this.btn_Help_Click);
             // 
             // btn_Save
             // 
@@ -134,6 +135,7 @@ namespace NoahHoMau
             this.btn_Save.TabIndex = 70;
             this.btn_Save.Text = "SAVE";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Clear
             // 
@@ -147,6 +149,7 @@ namespace NoahHoMau
             this.btn_Clear.TabIndex = 69;
             this.btn_Clear.Text = "CLEAR";
             this.btn_Clear.UseVisualStyleBackColor = false;
+            this.btn_Clear.Click += new System.EventHandler(this.btn_Clear_Click);
             // 
             // label1
             // 
@@ -169,6 +172,7 @@ namespace NoahHoMau
             this.btn_Paypal.TabIndex = 87;
             this.btn_Paypal.Text = "PAYPAL";
             this.btn_Paypal.UseVisualStyleBackColor = false;
+            this.btn_Paypal.Click += new System.EventHandler(this.btn_Paypal_Click);
             // 
             // rd_Visa
             // 
@@ -204,18 +208,18 @@ namespace NoahHoMau
             this.label11.Text = "PAYMENT";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button6
+            // btn_Back
             // 
-            this.button6.BackColor = System.Drawing.Color.Black;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(0, 39);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(68, 43);
-            this.button6.TabIndex = 97;
-            this.button6.Text = "BACK";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btn_Back.BackColor = System.Drawing.Color.Black;
+            this.btn_Back.FlatAppearance.BorderSize = 0;
+            this.btn_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Back.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_Back.Location = new System.Drawing.Point(0, 39);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(68, 43);
+            this.btn_Back.TabIndex = 97;
+            this.btn_Back.Text = "BACK";
+            this.btn_Back.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -305,7 +309,7 @@ namespace NoahHoMau
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Paypal);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "PaymentPortal";
@@ -335,7 +339,7 @@ namespace NoahHoMau
         private System.Windows.Forms.RadioButton rd_Visa;
         private System.Windows.Forms.RadioButton rd_Paypal;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
