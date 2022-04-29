@@ -40,9 +40,8 @@ namespace NoahHoMau
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Paypal = new System.Windows.Forms.Button();
             this.rd_Visa = new System.Windows.Forms.RadioButton();
-            this.rd_Paypal = new System.Windows.Forms.RadioButton();
+            this.rd_Amex = new System.Windows.Forms.RadioButton();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Back = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -160,19 +159,6 @@ namespace NoahHoMau
             this.label1.TabIndex = 65;
             this.label1.Text = "PAYMENT TYPE";
             // 
-            // btn_Paypal
-            // 
-            this.btn_Paypal.BackColor = System.Drawing.Color.Orange;
-            this.btn_Paypal.FlatAppearance.BorderSize = 0;
-            this.btn_Paypal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Paypal.ForeColor = System.Drawing.Color.Black;
-            this.btn_Paypal.Location = new System.Drawing.Point(-1, 366);
-            this.btn_Paypal.Name = "btn_Paypal";
-            this.btn_Paypal.Size = new System.Drawing.Size(803, 46);
-            this.btn_Paypal.TabIndex = 87;
-            this.btn_Paypal.Text = "PAYPAL";
-            this.btn_Paypal.UseVisualStyleBackColor = false;
-            // 
             // rd_Visa
             // 
             this.rd_Visa.AutoSize = true;
@@ -184,16 +170,16 @@ namespace NoahHoMau
             this.rd_Visa.Text = "VISA";
             this.rd_Visa.UseVisualStyleBackColor = true;
             // 
-            // rd_Paypal
+            // rd_Amex
             // 
-            this.rd_Paypal.AutoSize = true;
-            this.rd_Paypal.Location = new System.Drawing.Point(528, 121);
-            this.rd_Paypal.Name = "rd_Paypal";
-            this.rd_Paypal.Size = new System.Drawing.Size(65, 19);
-            this.rd_Paypal.TabIndex = 92;
-            this.rd_Paypal.TabStop = true;
-            this.rd_Paypal.Text = "PAYPAL";
-            this.rd_Paypal.UseVisualStyleBackColor = true;
+            this.rd_Amex.AutoSize = true;
+            this.rd_Amex.Location = new System.Drawing.Point(528, 121);
+            this.rd_Amex.Name = "rd_Amex";
+            this.rd_Amex.Size = new System.Drawing.Size(57, 19);
+            this.rd_Amex.TabIndex = 92;
+            this.rd_Amex.TabStop = true;
+            this.rd_Amex.Text = "AMEX";
+            this.rd_Amex.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -293,7 +279,7 @@ namespace NoahHoMau
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.rd_Paypal);
+            this.Controls.Add(this.rd_Amex);
             this.Controls.Add(this.rd_MasterCard);
             this.Controls.Add(this.rd_Visa);
             this.Controls.Add(this.tbx_Name);
@@ -306,7 +292,6 @@ namespace NoahHoMau
             this.Controls.Add(this.btn_Save);
             this.Controls.Add(this.btn_Clear);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Paypal);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.pictureBox1);
@@ -334,9 +319,8 @@ namespace NoahHoMau
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_Paypal;
         private System.Windows.Forms.RadioButton rd_Visa;
-        private System.Windows.Forms.RadioButton rd_Paypal;
+        private System.Windows.Forms.RadioButton rd_Amex;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.PictureBox pictureBox1;
