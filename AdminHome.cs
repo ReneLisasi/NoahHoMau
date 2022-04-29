@@ -35,5 +35,6 @@ namespace NoahHoMau
             nav_Admin_Customer.Show();
             this.Hide();
         }
+        
     }
 }

@@ -1,5 +1,4 @@
-﻿
-namespace NoahHoMau
+﻿namespace NoahHoMau
 {
     partial class PaymentPortal
     {
