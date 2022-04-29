@@ -172,7 +172,6 @@ namespace NoahHoMau
             this.btn_Paypal.TabIndex = 87;
             this.btn_Paypal.Text = "PAYPAL";
             this.btn_Paypal.UseVisualStyleBackColor = false;
-            this.btn_Paypal.Click += new System.EventHandler(this.btn_Paypal_Click);
             // 
             // rd_Visa
             // 
