@@ -16,5 +16,15 @@ namespace NoahHoMau
         {
             InitializeComponent();
         }
+
+        private void btn_OrderManager_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CustomerManager_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
