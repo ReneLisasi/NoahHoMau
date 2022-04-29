@@ -36,5 +36,10 @@ namespace NoahHoMau
         {
 
         }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
