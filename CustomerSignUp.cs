@@ -30,6 +30,7 @@ namespace NoahHoMau
         {
             InitializeComponent();
         }
+        
         //nav buttons
         private void btn_Portal_Click(object sender, EventArgs e)
         {
@@ -59,9 +60,10 @@ namespace NoahHoMau
 
             //check for duplicates
             c1.SelectDB(custId);
-            if (c1.getCustFname().Equals(null))
+            if (tbx_Phone.Equals(custId))
             {
                 MessageBox.Show("You have entered a phone number that already exists, please try again.");
+                return; //Safety return just in case we change later.
             }
             else
             {
@@ -73,21 +75,22 @@ namespace NoahHoMau
                 //insert payment////////////
                 c1.InsertDB();
             }
+        }
 
+        //This method will go to the customer home.
+        private void goToCustomerHome()
+        {
             //forward to next form
             CustomerHome nav_Home = new CustomerHome();
             nav_Home.Show();
             this.Hide();
         }
 
+        //This method will handle when the user presses the help button
         private void btn_Help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Help");
+            MessageBox.Show("Please contact the administrator at 123-456-7890");
         }
-
-        private void btn_Clear_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }
